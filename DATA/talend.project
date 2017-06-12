@@ -323,4 +323,5 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_hGKPgk9xEeeNop-cIEeESw" login="admin@company.com" firstName="admin" lastName="admin" type="DI" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_pTigoE9xEeeNop-cIEeESw" login="karthik.gurusamy@windeln.de" firstName="Karthik" lastName="K" type="DI" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_arHz0E9zEeeTmZtdZ5qEJg" login="k.Kumar@osb-ag.de"/>
 </xmi:XMI>
