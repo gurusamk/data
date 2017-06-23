@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendNoSQLMetadata:NoSQLConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmi:id="_rdZcsFgPEeem68WyxdemDA" name="Mongo" label="Mongo" dbType="MONGODB">
+  <attributes xmi:id="_rdZcsVgPEeem68WyxdemDA" key="DB_VERSION" value="MONGODB_3_2_X"/>
+  <attributes xmi:id="_rdZcslgPEeem68WyxdemDA" key="HOST" value="webshop_orders.prod.bi.windeln-it.de"/>
+  <attributes xmi:id="_rdZcs1gPEeem68WyxdemDA" key="PORT" value="27017"/>
+  <attributes xmi:id="_rdZctFgPEeem68WyxdemDA" key="DATABASE" value=""/>
+  <attributes xmi:id="_rdZctVgPEeem68WyxdemDA" key="REQUIRED_AUTHENTICATION" value="false"/>
+  <attributes xmi:id="_rdZctlgPEeem68WyxdemDA" key="USERNAME" value=""/>
+  <attributes xmi:id="_rdZct1gPEeem68WyxdemDA" key="PASSWORD" value=""/>
+  <attributes xmi:id="_rdZcuFgPEeem68WyxdemDA" key="USE_REPLICA_SET" value="false"/>
+  <attributes xmi:id="_rdZcuVgPEeem68WyxdemDA" key="REPLICA_SET" value="[]"/>
+</TalendNoSQLMetadata:NoSQLConnection>
