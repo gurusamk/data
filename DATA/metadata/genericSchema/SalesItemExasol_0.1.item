@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_YLs8kEUWEeeyMJL3iKje7Q" name="repository.metadataGenericSchema" dataPackage="_YLs8kUUWEeeyMJL3iKje7Q" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_YLs8kUUWEeeyMJL3iKje7Q" name="repository.metadataGenericSchema" dataManager="_YLs8kEUWEeeyMJL3iKje7Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_YLs8kkUWEeeyMJL3iKje7Q" id="_NPagEEUUEeeyMJL3iKje7Q" label="SalesItemExasol">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8k0UWEeeyMJL3iKje7Q" name="\&quot;ItemIdentifier\&quot;" label="ItemIdentifier" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8lEUWEeeyMJL3iKje7Q" name="\&quot;ShopIdentifier\&quot;" label="ShopIdentifier" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8lUUWEeeyMJL3iKje7Q" name="\&quot;ManagementSystem\&quot;" label="ManagementSystem" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8lkUWEeeyMJL3iKje7Q" name="\&quot;Type\&quot;" label="Type" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8l0UWEeeyMJL3iKje7Q" name="\&quot;EAN\&quot;" label="Ean" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8mEUWEeeyMJL3iKje7Q" name="\&quot;ReportingName\&quot;" label="ReportingName" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YLs8mUUWEeeyMJL3iKje7Q" name="\&quot;Description\&quot;" label="Description" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cqomAEUWEeeyMJL3iKje7Q" name="\&quot;IsService\&quot;" label="IsService" length="-1" sourceType="BOOLEAN" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eYbkkEUWEeeyMJL3iKje7Q" name="\&quot;IsBOM\&quot;" label="IsBOM" length="-1" sourceType="BOOLEAN" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_laJT0EUWEeeyMJL3iKje7Q" name="\&quot;ShopStatus\&quot;" label="ShopStatus" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pedd0EUWEeeyMJL3iKje7Q" name="\&quot;ShopMainCategoryIdentifier\&quot;" label="ShopMainCategory" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_aZ2f8EuJEeeIVt8PbPwqKA" name="\&quot;ShopMainCategoryName\&quot;" label="ShopMainCategoryName" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_tAuqsEUWEeeyMJL3iKje7Q" name="\&quot;ShopCategoryPath\&quot;" label="ShopCategoryPath" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zYznEEUWEeeyMJL3iKje7Q" name="\&quot;HarmonizedCategory\&quot;" label="HarmonizedCategory" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2elsQEUWEeeyMJL3iKje7Q" name="\&quot;Brand\&quot;" label="Brand" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_6JbmUEUWEeeyMJL3iKje7Q" name="\&quot;Season\&quot;" label="Season" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_87dCAEUWEeeyMJL3iKje7Q" name="\&quot;Colour\&quot;" label="Colour" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_COb-kEUXEeeyMJL3iKje7Q" name="\&quot;ContentRating\&quot;" label="ContentRating" length="-1" sourceType="DECIMAL" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GGAGAEUXEeeyMJL3iKje7Q" name="\&quot;ProductType\&quot;" label="ProductType" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M77cAEUXEeeyMJL3iKje7Q" name="\&quot;Material\&quot;" label="Material" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SRgZkEUXEeeyMJL3iKje7Q" name="\&quot;Size\&quot;" label="Size" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_VdqMgEUXEeeyMJL3iKje7Q" name="\&quot;CountryOfOrigin\&quot;" label="CountryOfOrigin" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bAVx8EUXEeeyMJL3iKje7Q" name="\&quot;GoogleNoIndex\&quot;" label="GoogleNoIndex" length="-1" sourceType="BOOLEAN" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_emSk8EUXEeeyMJL3iKje7Q" name="\&quot;SalesDispositionClass\&quot;" label="SalesDispositionClass" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0inSUEUXEeeyMJL3iKje7Q" name="\&quot;ApproximatePurchasePrice\&quot;" label="ApproximatePurchasePrice" length="-1" sourceType="FLOAT" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7v-38EUXEeeyMJL3iKje7Q" name="\&quot;OversoldLimit\&quot;" label="OversoldLimit" length="-1" sourceType="DECIMAL" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BmpJUEUYEeeyMJL3iKje7Q" name="\&quot;OversoldType\&quot;" label="OversoldType" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E0p9cEUYEeeyMJL3iKje7Q" name="\&quot;CanonicalURL\&quot;" label="CanonicalURL" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

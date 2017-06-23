@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_R3qx0UYKEeehpaV-WRrPMw" name="repository.metadataGenericSchema" dataPackage="_R3qx0kYKEeehpaV-WRrPMw" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_R3qx0kYKEeehpaV-WRrPMw" name="repository.metadataGenericSchema" dataManager="_R3qx0UYKEeehpaV-WRrPMw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_R3rY4EYKEeehpaV-WRrPMw" id="_Fxj7oEYKEeehpaV-WRrPMw" label="CountryCodes">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R3rY4UYKEeehpaV-WRrPMw" name="\&quot;Name\&quot;" label="Name" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R3rY4kYKEeehpaV-WRrPMw" name="\&quot;2LetterCode\&quot;" label="Code" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

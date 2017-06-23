@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_7uby0U9qEeeV3LHmIJHbJw" name="repository.metadataGenericSchema" dataPackage="_7uby0k9qEeeV3LHmIJHbJw" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_7uby0k9qEeeV3LHmIJHbJw" name="repository.metadataGenericSchema" dataManager="_7uby0U9qEeeV3LHmIJHbJw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7uby009qEeeV3LHmIJHbJw" id="_bHBbwE9qEeeV3LHmIJHbJw" label="Ax_VendTableCube">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ucZ4E9qEeeV3LHmIJHbJw" name="AccountNum" label="VendorId" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7ucZ4U9qEeeV3LHmIJHbJw" name="Name" label="VendorName" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

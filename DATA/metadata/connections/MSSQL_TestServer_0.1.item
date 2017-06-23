@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_V6rLIE9IEeeV3LHmIJHbJw" name="MSSQL_TestServer" id="_1xoyIE9HEeeV3LHmIJHbJw" label="MSSQL_TestServer" dataPackage="_WiZaAE9qEeeV3LHmIJHbJw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://mssql.test.bi.windeln-it.de:1433/UnifiedDWH;" dbVersionString="JTDS" Port="1433" Username="kobergj" Password="cTU5cIg7UpKvvCcHNo1chg==" ServerName="mssql.test.bi.windeln-it.de" DatasourceName="" FileFieldName="" SID="UnifiedDWH" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_V6rLIU9IEeeV3LHmIJHbJw" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_V61jME9IEeeV3LHmIJHbJw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_V6_UME9IEeeV3LHmIJHbJw" tag="Status" value=""/>
+    <taggedValue xmi:id="_V6_UMU9IEeeV3LHmIJHbJw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_V6_UMk9IEeeV3LHmIJHbJw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_V6_UM09IEeeV3LHmIJHbJw" tag="Description" value=""/>
+    <taggedValue xmi:id="_V6_UNE9IEeeV3LHmIJHbJw" tag="Author" value=""/>
+    <taggedValue xmi:id="_V6_UNU9IEeeV3LHmIJHbJw" tag="otherParameter"/>
+    <taggedValue xmi:id="_Wf6twE9qEeeV3LHmIJHbJw" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_Wf6twU9qEeeV3LHmIJHbJw" tag="DB ProductVersion" value="12.00.2000"/>
+    <taggedValue xmi:id="_Wf6twk9qEeeV3LHmIJHbJw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_V6rLIk9IEeeV3LHmIJHbJw" key="CONN_PARA_KEY_USERNAME" value="kobergj"/>
+    <parameters xmi:id="_QaDiwE9qEeeV3LHmIJHbJw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_WiZaAE9qEeeV3LHmIJHbJw" name="UnifiedDWH" dataManager="_V6rLIE9IEeeV3LHmIJHbJw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_WiZaAU9qEeeV3LHmIJHbJw" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

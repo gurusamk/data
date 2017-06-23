@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_eYXnEExREeeUNedlm5ZuKg" name="repository.metadataGenericSchema" dataPackage="_eYXnEUxREeeUNedlm5ZuKg" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_eYXnEUxREeeUNedlm5ZuKg" name="repository.metadataGenericSchema" dataManager="_eYXnEExREeeUNedlm5ZuKg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eYXnEkxREeeUNedlm5ZuKg" id="_OzrxMExREeeUNedlm5ZuKg" label="LastLoadedTimestamps">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eYXnE0xREeeUNedlm5ZuKg" name="\&quot;Processname\&quot;" label="ProcessName" sourceType="VARCHAR" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eYXnFExREeeUNedlm5ZuKg" name="\&quot;LastLoadedDate\&quot;" label="LastLoadedDate" length="-1" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

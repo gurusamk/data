@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_8WkiUEqzEeeupvqP_JLieQ" name="repository.metadataGenericSchema" dataPackage="_8WkiUUqzEeeupvqP_JLieQ" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_8WkiUUqzEeeupvqP_JLieQ" name="repository.metadataGenericSchema" dataManager="_8WkiUEqzEeeupvqP_JLieQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_8WkiUkqzEeeupvqP_JLieQ" id="_xacTUEqwEeeupvqP_JLieQ" label="InventoryItemExasol">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiU0qzEeeupvqP_JLieQ" name="\&quot;ItemIdentifier\&quot;" label="ItemIdentifier" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiVEqzEeeupvqP_JLieQ" name="\&quot;WarehouseCode\&quot;" label="WarehouseIdentifier" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiVUqzEeeupvqP_JLieQ" name="\&quot;ManagementSystem\&quot;" label="ManagementSystem" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiVkqzEeeupvqP_JLieQ" name="\&quot;EAN\&quot;" label="EAN" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiV0qzEeeupvqP_JLieQ" name="\&quot;ReportingName\&quot;" label="ReportingName" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiWEqzEeeupvqP_JLieQ" name="\&quot;Description\&quot;" label="Description" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiWUqzEeeupvqP_JLieQ" name="\&quot;HarmonizedCategory\&quot;" label="HarmonizedCategory" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiWkqzEeeupvqP_JLieQ" name="\&quot;Successor\&quot;" label="Successor" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiW0qzEeeupvqP_JLieQ" name="\&quot;Predecessor\&quot;" label="Predecessor" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiXEqzEeeupvqP_JLieQ" name="\&quot;ProductType\&quot;" label="ProductType" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiXUqzEeeupvqP_JLieQ" name="\&quot;ProductGroup\&quot;" label="ProductGroup" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiXkqzEeeupvqP_JLieQ" name="\&quot;Brand\&quot;" label="Brand" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiX0qzEeeupvqP_JLieQ" name="\&quot;Season\&quot;" label="Season" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiYEqzEeeupvqP_JLieQ" name="\&quot;Colour\&quot;" label="Colour" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiYUqzEeeupvqP_JLieQ" name="\&quot;Material\&quot;" label="Material" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiYkqzEeeupvqP_JLieQ" name="\&quot;Size\&quot;" label="Size" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiY0qzEeeupvqP_JLieQ" name="\&quot;RecommendedRetailPriceInEur\&quot;" label="RecommendedRetailPrice" length="-1" sourceType="FLOAT" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiZEqzEeeupvqP_JLieQ" name="\&quot;InventoryDispositionClass\&quot;" label="InventoryDispositionClass" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiZUqzEeeupvqP_JLieQ" name="\&quot;CountryOfOriginName\&quot;" label="CountryOfOrigin" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiZkqzEeeupvqP_JLieQ" name="\&quot;LastVendorIdentifier\&quot;" label="LastVendorIdentifier" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiZ0qzEeeupvqP_JLieQ" name="\&quot;LastVendorName\&quot;" label="LastVendorName" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8WkiaEqzEeeupvqP_JLieQ" name="\&quot;LastPurchasePriceInEur\&quot;" label="LastPurchasePrice" length="-1" sourceType="FLOAT" talendType="id_Float"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

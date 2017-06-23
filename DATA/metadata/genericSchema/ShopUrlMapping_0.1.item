@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Kav6wEauEeeyIrOrCAmQGw" name="repository.metadataGenericSchema" dataPackage="_Kav6wUauEeeyIrOrCAmQGw" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_Kav6wUauEeeyIrOrCAmQGw" name="repository.metadataGenericSchema" dataManager="_Kav6wEauEeeyIrOrCAmQGw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Kav6wkauEeeyIrOrCAmQGw" id="_8BIJ0EatEeeyIrOrCAmQGw" label="ShopUrlMapping">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kav6w0auEeeyIrOrCAmQGw" name="\&quot;PimShopName\&quot;" label="PimShopName" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Kav6xEauEeeyIrOrCAmQGw" name="\&quot;Url\&quot;" label="Url" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

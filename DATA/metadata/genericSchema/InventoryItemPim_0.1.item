@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_k8Az0UqcEeeupvqP_JLieQ" name="repository.metadataGenericSchema" dataPackage="_k8Ba4EqcEeeupvqP_JLieQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_k8Ba4EqcEeeupvqP_JLieQ" name="repository.metadataGenericSchema" dataManager="_k8Az0UqcEeeupvqP_JLieQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_k8Ba4UqcEeeupvqP_JLieQ" id="_52yaEEqbEeeupvqP_JLieQ" label="InventoryItemPim">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba4kqcEeeupvqP_JLieQ" name="ean" label="ean" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba40qcEeeupvqP_JLieQ" name="id" label="id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba5EqcEeeupvqP_JLieQ" name="product_name" label="product_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba5UqcEeeupvqP_JLieQ" name="product_name_short_1" label="product_name_short_1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba5kqcEeeupvqP_JLieQ" name="successor" label="successor" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba50qcEeeupvqP_JLieQ" name="shop" label="shop" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba6EqcEeeupvqP_JLieQ" name="group_id" label="group_id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba6UqcEeeupvqP_JLieQ" name="brand" label="brand" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba6kqcEeeupvqP_JLieQ" name="saison_jahr" label="saison_jahr" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba60qcEeeupvqP_JLieQ" name="farbe" label="farbe" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba7EqcEeeupvqP_JLieQ" name="material" label="material" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba7UqcEeeupvqP_JLieQ" name="groesse" label="groesse" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba7kqcEeeupvqP_JLieQ" name="article_class" label="article_class" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba70qcEeeupvqP_JLieQ" name="country_of_origin" label="country_of_origin" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k8Ba8EqcEeeupvqP_JLieQ" name="supplier_id" label="supplier_id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qYnlcE0YEeeUNedlm5ZuKg" name="modifiedAt" label="modifiedAt" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

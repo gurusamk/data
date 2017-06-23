@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_IIlGIEU1EeeyMJL3iKje7Q" name="repository.metadataGenericSchema" dataPackage="_IIlGIUU1EeeyMJL3iKje7Q"/>
+  <TalendMetadata:GenericPackage xmi:id="_IIlGIUU1EeeyMJL3iKje7Q" name="repository.metadataGenericSchema" dataManager="_IIlGIEU1EeeyMJL3iKje7Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IIlGIkU1EeeyMJL3iKje7Q" id="_C-BFwEU1EeeyMJL3iKje7Q" label="SalesItemPim">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IIlGI0U1EeeyMJL3iKje7Q" name="ean" label="ean" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8OfdQEU1EeeyMJL3iKje7Q" name="id" label="id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_87jXkEU1EeeyMJL3iKje7Q" name="product_name" label="product_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vHdDoEU3EeeyMJL3iKje7Q" name="product_name_short_1" label="product_name_short_1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zrU3cEU3EeeyMJL3iKje7Q" name="isBOM" label="isBOM" length="-1" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1Wv3cEU3EeeyMJL3iKje7Q" name="branch" label="branch" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4eY90EU3EeeyMJL3iKje7Q" name="main_category" label="main_category" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5_hZYEU3EeeyMJL3iKje7Q" name="category_id" label="category_id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7bEKUEU3EeeyMJL3iKje7Q" name="brand" label="brand" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8C4YQEU3EeeyMJL3iKje7Q" name="saison_jahr" label="saison_jahr" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-jrhEEU3EeeyMJL3iKje7Q" name="farbe" label="farbe" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ad0SgEU4EeeyMJL3iKje7Q" name="kategorie3" label="kategorie3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Bn1OkEU4EeeyMJL3iKje7Q" name="material" label="material" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Cg3vYEU4EeeyMJL3iKje7Q" name="groesse" label="groesse" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_D_SOIEU4EeeyMJL3iKje7Q" name="country_of_origin" label="country_of_origin" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_F9HMwEU4EeeyMJL3iKje7Q" name="noindex" label="noindex" length="-1" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HXzpIEU4EeeyMJL3iKje7Q" name="purchasePrice" label="purchasePrice" length="-1" talendType="id_List"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JLsooEU4EeeyMJL3iKje7Q" name="oversold_limit" label="oversold_limit" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KxndkEU4EeeyMJL3iKje7Q" name="oversold_type" label="oversold_type" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MKRSkEU4EeeyMJL3iKje7Q" name="url" label="url" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZRamUEuLEeeIVt8PbPwqKA" name="modifiedAt" label="modifiedAt" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

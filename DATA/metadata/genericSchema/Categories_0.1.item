@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_GmU_YEbZEeeI1cUx5Sgvug" name="repository.metadataGenericSchema" dataPackage="_GmU_YUbZEeeI1cUx5Sgvug" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_GmU_YUbZEeeI1cUx5Sgvug" name="repository.metadataGenericSchema" dataManager="_GmU_YEbZEeeI1cUx5Sgvug">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GmU_YkbZEeeI1cUx5Sgvug" id="_3ulIAEbYEeeI1cUx5Sgvug" label="Categories">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GmU_Y0bZEeeI1cUx5Sgvug" name="\&quot;Identifier\&quot;" label="Identifier" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GmU_ZEbZEeeI1cUx5Sgvug" name="\&quot;Shop\&quot;" label="Shop" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GmU_ZUbZEeeI1cUx5Sgvug" name="\&quot;Name\&quot;" label="Name" sourceType="VARCHAR" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GmU_ZkbZEeeI1cUx5Sgvug" name="\&quot;Parent\&quot;" label="Parent" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

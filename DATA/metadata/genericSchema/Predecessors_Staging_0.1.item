@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_C_Je8FA9EeePgaM3cxrg8w" name="repository.metadataGenericSchema" dataPackage="_C_Je8VA9EeePgaM3cxrg8w" mappingTypeUsed="true" mappingTypeId="Exasol_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_C_Je8VA9EeePgaM3cxrg8w" name="repository.metadataGenericSchema" dataManager="_C_Je8FA9EeePgaM3cxrg8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C_Je8lA9EeePgaM3cxrg8w" id="_1qys8FA8EeePgaM3cxrg8w" label="Predecessors">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C_Je81A9EeePgaM3cxrg8w" name="\&quot;Predecessor\&quot;" label="Predecessor" sourceType="VARCHAR" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C_Je9FA9EeePgaM3cxrg8w" name="\&quot;Successor\&quot;" label="Successor" sourceType="VARCHAR" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
