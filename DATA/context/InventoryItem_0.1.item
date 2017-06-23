@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Jf0ewFghEeeDMdBo_7kb_Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Jf0ewVghEeeDMdBo_7kb_Q" comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" type="id_Date" value="1986-06-16 17:13:28"/>
+  <contextParameter xmi:id="_Jf0ewlghEeeDMdBo_7kb_Q" comment="" name="ProcessName" prompt="ProcessName?" promptNeeded="false" type="id_String" value="&quot;InventoryItem&quot;"/>
+  <contextParameter xmi:id="_Jf0ew1ghEeeDMdBo_7kb_Q" comment="" name="LastModified" prompt="LastModified?" promptNeeded="false" type="id_Date" value="1986-06-16 16:54:30"/>
+</talendfile:ContextType>
