@@ -606,6 +606,32 @@
       <relatedItems xmi:id="_01d77V_9EeeLFPNIYizNYw" id="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" version="Latest" type="schema"/>
       <relatedItems xmi:id="_01d77l_9EeeLFPNIYizNYw" id="_YLqgUEUWEeeyMJL3iKje7Q - SalesItemExasol" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_4jqr8F_9EeeLFPNIYizNYw">
+      <baseItem xmi:id="_4jqr8V_9EeeLFPNIYizNYw" id="_DNIi0EUUEeeyMJL3iKje7Q" version="1.8" type="job"/>
+      <relatedItems xmi:id="_4jqr8l_9EeeLFPNIYizNYw" id="_ACXm8EtqEeeIVt8PbPwqKA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_4jqr81_9EeeLFPNIYizNYw" id="_9gy3oExREeeUNedlm5ZuKg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_4jqr9F_9EeeLFPNIYizNYw" id="_k02rYFTuEeePgaM3cxrg8w" version="Latest" type="property"/>
+      <relatedItems xmi:id="_4jqr9V_9EeeLFPNIYizNYw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr9l_9EeeLFPNIYizNYw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr91_9EeeLFPNIYizNYw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr-F_9EeeLFPNIYizNYw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr-V_9EeeLFPNIYizNYw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr-l_9EeeLFPNIYizNYw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr-1_9EeeLFPNIYizNYw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr_F_9EeeLFPNIYizNYw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr_V_9EeeLFPNIYizNYw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr_l_9EeeLFPNIYizNYw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_4jqr_1_9EeeLFPNIYizNYw" id="_BeLrsEebEeeupvqP_JLieQ - PimShopWarehouseMapping" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsAF_9EeeLFPNIYizNYw" id="_R3qx0EYKEeehpaV-WRrPMw - CountryCodes" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsAV_9EeeLFPNIYizNYw" id="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsAl_9EeeLFPNIYizNYw" id="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsA1_9EeeLFPNIYizNYw" id="_ToyH0EeDEeeupvqP_JLieQ - PurchasePrices" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsBF_9EeeLFPNIYizNYw" id="_GmSjIEbZEeeI1cUx5Sgvug - Categories" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsBV_9EeeLFPNIYizNYw" id="_Kas3cEauEeeyIrOrCAmQGw - ShopUrlMapping" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsBl_9EeeLFPNIYizNYw" id="_YLqgUEUWEeeyMJL3iKje7Q - SalesItemExasol" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsB1_9EeeLFPNIYizNYw" id="_pRa88EX-EeehpaV-WRrPMw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_4jqsCF_9EeeLFPNIYizNYw" id="_2xiZYEYGEeehpaV-WRrPMw - OversoldTypeMapping" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_pOb-ME9xEeeNop-cIEeESw" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pOb-MU9xEeeNop-cIEeESw" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pOb-Mk9xEeeNop-cIEeESw" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
