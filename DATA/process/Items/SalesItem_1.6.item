@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="LastModified" prompt="LastModified?" promptNeeded="false" repositoryContextId="_ACXm8EtqEeeIVt8PbPwqKA" type="id_Date" value="1986-06-16 16:54:30"/>
+    <contextParameter comment="" name="ProcessName" prompt="ProcessName?" promptNeeded="false" repositoryContextId="_ACXm8EtqEeeIVt8PbPwqKA" type="id_String" value="&quot;SalesItem&quot;"/>
+    <contextParameter comment="" name="StartDate" prompt="StartDate?" promptNeeded="false" repositoryContextId="_ACXm8EtqEeeIVt8PbPwqKA" type="id_Date" value="1986-06-16 17:13:28"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/talend/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_sCH0wEUTEeeyMJL3iKje7Q" name="DataOperation"/>
+    <routinesParameter id="_sDMy0EUTEeeyMJL3iKje7Q" name="Mathematical"/>
+    <routinesParameter id="_sDXx8EUTEeeyMJL3iKje7Q" name="Numeric"/>
+    <routinesParameter id="_sDgU0EUTEeeyMJL3iKje7Q" name="Relational"/>
+    <routinesParameter id="_sDpewEUTEeeyMJL3iKje7Q" name="StringHandling"/>
+    <routinesParameter id="_sD3hMEUTEeeyMJL3iKje7Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_sEArIEUTEeeyMJL3iKje7Q" name="TalendDate"/>
+    <routinesParameter id="_sEVbQEUTEeeyMJL3iKje7Q" name="TalendString"/>
+    <routinesParameter id="_sEelMEUTEeeyMJL3iKje7Q" name="TalendStringUtil"/>
+    <routinesParameter id="_ol9IwFf_EeeEtpnxpoFvkQ" name="SQLike"/>
+  </parameters>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_2_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
+    <elementParameter field="TABLE" name="REPLICA_SET">
+      <elementValue elementRef="REPLICA_HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
+      <elementValue elementRef="REPLICA_PORT" value="27017"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;pim&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;usr_bi_read&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="reYoF+nhnt/7EBLLuV1QMB2C6oVJXkbU"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;productData&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="AGGREGATION_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;" show="false"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES">
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {modifiedAt: { $gt: '&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;, context.StartDate) + &quot;'} } }&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {current: 1, branch: 'public', shop: {$exists: true}, unit_of_measure: {$exists: true} } }&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $unwind: '$shop' }&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name_short_1"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isBOM"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="branch"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="main_category"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="category_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="brand"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saison_jahr"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="farbe"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kategorie3"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="material"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groesse"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_of_origin"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="noindex"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="purchasePrice"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;unit_of_measure.0&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_limit"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_type"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedAt"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="" show="false"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemPim" name="tMongoDBInput_1">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemPim" name="tUnite_1">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_2_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
+    <elementParameter field="TABLE" name="REPLICA_SET">
+      <elementValue elementRef="REPLICA_HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
+      <elementValue elementRef="REPLICA_PORT" value="27017"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;pim&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;usr_bi_read&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="reYoF+nhnt/7EBLLuV1QMB2C6oVJXkbU"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;productData&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="AGGREGATION_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;" show="false"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES">
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {modifiedAt: { $gt: '&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;, context.StartDate) + &quot;'} } }&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {current: 1, branch: 'intern', shop: {$exists: true}, unit_of_measure: {$exists: true} } }&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $unwind: '$shop' }&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name_short_1"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isBOM"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="branch"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="main_category"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="category_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="brand"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saison_jahr"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="farbe"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kategorie3"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="material"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groesse"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_of_origin"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="noindex"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="purchasePrice"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;unit_of_measure.0&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_limit"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_type"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value="&quot;shop&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedAt"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="" show="false"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemPim" name="tMongoDBInput_2">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_IIkfEEU1EeeyMJL3iKje7Q - SalesItemPim" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name_short_1"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isBOM"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="branch"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="main_category"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="category_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="brand"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saison_jahr"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="farbe"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kategorie3"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="material"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groesse"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_of_origin"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="noindex"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="purchasePrice"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_limit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_type"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedAt"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemPim" name="tUniqRow_1">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" label="SalesItemPim" name="UNIQUE">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" label="SalesItemPim" name="DUPLICATE">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_name_short_1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isBOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="branch"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="main_category"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="category_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="brand"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saison_jahr"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="farbe"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kategorie3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="material"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="groesse"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country_of_origin"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="noindex"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="purchasePrice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_limit"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oversold_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="url"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modifiedAt"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemPim" name="tLogRow_1">
+      <column comment="" key="false" length="0" name="ean" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="product_name_short_1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isBOM" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="branch" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="main_category" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="category_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="brand" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="saison_jahr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="farbe" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="kategorie3" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="material" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="groesse" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="country_of_origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="noindex" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="purchasePrice" nullable="true" pattern="" precision="0" type="id_List" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="oversold_limit" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="oversold_type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="url" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modifiedAt" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_DNIi0EUUEeeyMJL3iKje7Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemExasol" name="dwhrow">
+      <column comment="" key="true" length="0" name="ItemIdentifier" nullable="false" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="ShopIdentifier" nullable="false" originalDbColumnName="\&quot;ShopIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ManagementSystem" nullable="false" originalDbColumnName="\&quot;ManagementSystem\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Type" nullable="true" originalDbColumnName="\&quot;Type\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ean" nullable="true" originalDbColumnName="\&quot;EAN\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReportingName" nullable="true" originalDbColumnName="\&quot;ReportingName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Description" nullable="true" originalDbColumnName="\&quot;Description\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsService" nullable="true" originalDbColumnName="\&quot;IsService\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsBOM" nullable="true" originalDbColumnName="\&quot;IsBOM\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopStatus" nullable="true" originalDbColumnName="\&quot;ShopStatus\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategory" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategoryName" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopCategoryPath" nullable="true" originalDbColumnName="\&quot;ShopCategoryPath\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="HarmonizedCategory" nullable="true" originalDbColumnName="\&quot;HarmonizedCategory\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brand" nullable="true" originalDbColumnName="\&quot;Brand\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Season" nullable="true" originalDbColumnName="\&quot;Season\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Colour" nullable="true" originalDbColumnName="\&quot;Colour\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContentRating" nullable="true" originalDbColumnName="\&quot;ContentRating\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductType" nullable="true" originalDbColumnName="\&quot;ProductType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Material" nullable="true" originalDbColumnName="\&quot;Material\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Size" nullable="true" originalDbColumnName="\&quot;Size\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CountryOfOrigin" nullable="true" originalDbColumnName="\&quot;CountryOfOrigin\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GoogleNoIndex" nullable="true" originalDbColumnName="\&quot;GoogleNoIndex\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SalesDispositionClass" nullable="true" originalDbColumnName="\&quot;SalesDispositionClass\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ApproximatePurchasePrice" nullable="true" originalDbColumnName="\&quot;ApproximatePurchasePrice\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OversoldLimit" nullable="true" originalDbColumnName="\&quot;OversoldLimit\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OversoldType" nullable="true" originalDbColumnName="\&quot;OversoldType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CanonicalURL" nullable="true" originalDbColumnName="\&quot;CanonicalURL\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="SalesItemExasol" name="dwhrow2">
+      <column comment="" key="true" length="0" name="ItemIdentifier" nullable="false" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="ShopIdentifier" nullable="false" originalDbColumnName="\&quot;ShopIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ManagementSystem" nullable="false" originalDbColumnName="\&quot;ManagementSystem\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Type" nullable="true" originalDbColumnName="\&quot;Type\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ean" nullable="true" originalDbColumnName="\&quot;EAN\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReportingName" nullable="true" originalDbColumnName="\&quot;ReportingName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Description" nullable="true" originalDbColumnName="\&quot;Description\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsService" nullable="true" originalDbColumnName="\&quot;IsService\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsBOM" nullable="true" originalDbColumnName="\&quot;IsBOM\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopStatus" nullable="true" originalDbColumnName="\&quot;ShopStatus\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategory" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategoryName" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopCategoryPath" nullable="true" originalDbColumnName="\&quot;ShopCategoryPath\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="HarmonizedCategory" nullable="true" originalDbColumnName="\&quot;HarmonizedCategory\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brand" nullable="true" originalDbColumnName="\&quot;Brand\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Season" nullable="true" originalDbColumnName="\&quot;Season\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Colour" nullable="true" originalDbColumnName="\&quot;Colour\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContentRating" nullable="true" originalDbColumnName="\&quot;ContentRating\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductType" nullable="true" originalDbColumnName="\&quot;ProductType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Material" nullable="true" originalDbColumnName="\&quot;Material\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Size" nullable="true" originalDbColumnName="\&quot;Size\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CountryOfOrigin" nullable="true" originalDbColumnName="\&quot;CountryOfOrigin\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GoogleNoIndex" nullable="true" originalDbColumnName="\&quot;GoogleNoIndex\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SalesDispositionClass" nullable="true" originalDbColumnName="\&quot;SalesDispositionClass\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ApproximatePurchasePrice" nullable="true" originalDbColumnName="\&quot;ApproximatePurchasePrice\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OversoldLimit" nullable="true" originalDbColumnName="\&quot;OversoldLimit\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OversoldType" nullable="true" originalDbColumnName="\&quot;OversoldType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CanonicalURL" nullable="true" originalDbColumnName="\&quot;CanonicalURL\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="&quot;WINDELN_PIM&quot;" type="id_String"/>
+        <mapperTableEntries name="var2" expression="&quot;Article&quot;" type="id_String"/>
+        <mapperTableEntries name="var3" expression="false" type="id_Boolean"/>
+        <mapperTableEntries name="var4" expression="( StringHandling.LEN(row3.ean.replaceAll(&quot;[^0-9]&quot;,&quot;&quot;)) >= 13 ) ?&#xA;row3.ean.replaceAll(&quot;[^0-9]&quot;, &quot;&quot;).substring(0, 12) :&#xA;row3.ean.replaceAll(&quot;[^0-9]&quot;, &quot;&quot;) " type="id_String"/>
+        <mapperTableEntries name="var5" expression="row7.Url + row3.url " type="id_String"/>
+        <mapperTableEntries name="var6" expression="(row3.category_id != null) ? row3.category_id.replace(&quot;##&quot;, &quot;|&quot;) : null " type="id_String"/>
+        <mapperTableEntries name="var7" expression="(row3.modifiedAt.after(context.LastModified)) ? (context.LastModified = row3.modifiedAt) : Var.var7 " type="id_Date"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="dwhrow">
+        <mapperTableEntries name="ItemIdentifier" expression="row3.ean " type="id_String"/>
+        <mapperTableEntries name="ShopIdentifier" expression="row4.DwhName " type="id_String"/>
+        <mapperTableEntries name="ManagementSystem" expression="Var.var1 " type="id_String"/>
+        <mapperTableEntries name="Type" expression="Var.var2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ean" expression="Var.var4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ReportingName" expression="row3.product_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Description" expression="row3.product_name_short_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IsService" expression="Var.var3 " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="IsBOM" expression="row3.isBOM " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="ShopStatus" expression="row3.branch " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopMainCategory" expression="row3.main_category " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopMainCategoryName" expression="row9.Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopCategoryPath" expression="Var.var6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HarmonizedCategory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Brand" expression="row3.brand " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Season" expression="row3.saison_jahr " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Colour" expression="row3.farbe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContentRating" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ProductType" expression="row3.kategorie3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Material" expression="row3.material " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Size" expression="row3.groesse " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CountryOfOrigin" expression="row6.Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GoogleNoIndex" expression="row3.noindex " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="SalesDispositionClass" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ApproximatePurchasePrice" expression="row8.price " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="OversoldLimit" expression="row3.oversold_limit " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OversoldType" expression="row5.DwhName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CanonicalURL" expression="Var.var5 " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="dwhrow2">
+        <mapperTableEntries name="ItemIdentifier" type="id_String"/>
+        <mapperTableEntries name="ShopIdentifier" type="id_String"/>
+        <mapperTableEntries name="ManagementSystem" type="id_String"/>
+        <mapperTableEntries name="Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ean" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ReportingName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IsService" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="IsBOM" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="ShopStatus" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopMainCategory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopMainCategoryName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShopCategoryPath" type="id_String" nullable="true"/>
+        <mapperTableEntries name="HarmonizedCategory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Brand" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Season" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Colour" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContentRating" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ProductType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Material" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Size" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CountryOfOrigin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GoogleNoIndex" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="SalesDispositionClass" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ApproximatePurchasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="OversoldLimit" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OversoldType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CanonicalURL" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ean" type="id_String" nullable="true"/>
+        <mapperTableEntries name="id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="product_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="product_name_short_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isBOM" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="branch" type="id_String" nullable="true"/>
+        <mapperTableEntries name="main_category" type="id_String" nullable="true"/>
+        <mapperTableEntries name="category_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="brand" type="id_String" nullable="true"/>
+        <mapperTableEntries name="saison_jahr" type="id_String" nullable="true"/>
+        <mapperTableEntries name="farbe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="kategorie3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="material" type="id_String" nullable="true"/>
+        <mapperTableEntries name="groesse" type="id_String" nullable="true"/>
+        <mapperTableEntries name="country_of_origin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="noindex" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="purchasePrice" type="id_List" nullable="true"/>
+        <mapperTableEntries name="oversold_limit" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="oversold_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="url" type="id_String" nullable="true"/>
+        <mapperTableEntries name="modifiedAt" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DwhName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PimSourceName" expression="row3.id " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="CategoryManagerShopCode" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DwhName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PimSourceName" expression="row3.oversold_type " type="id_String" nullable="true" operator="="/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Name" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code" expression="row3.country_of_origin " type="id_String" nullable="true" operator="="/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PimShopName" expression="row3.id " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="Url" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row10" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PimShopName" expression="row3.id " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="PimWarehouseName" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ean" expression="row3.ean " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="location" expression="row10.PimWarehouseName " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="price" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="start_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Branch" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Identifier" expression="row3.main_category " type="id_String" operator="="/>
+        <mapperTableEntries name="Shop" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Parent" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_pRa88EX-EeehpaV-WRrPMw - metadata" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;ShopNameMapping\&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM&#x9;STAGING.\&quot;ShopNameMapping\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DwhName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PimSourceName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CategoryManagerShopCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tEXAInput_1">
+      <column comment="" key="false" length="0" name="DwhName" nullable="true" originalDbColumnName="\&quot;DwhName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PimSourceName" nullable="true" originalDbColumnName="\&quot;PimSourceName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CategoryManagerShopCode" nullable="true" originalDbColumnName="\&quot;CategoryManagerShopCode\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_2xiZYEYGEeehpaV-WRrPMw - OversoldTypeMapping" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;OversoldTypeMapping&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM&#x9;STAGING.\&quot;OversoldTypeMapping\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DwhName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PimSourceName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OversoldTypeMapping" name="tEXAInput_2">
+      <column comment="" key="false" length="0" name="DwhName" nullable="true" originalDbColumnName="\&quot;DwhName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PimSourceName" nullable="true" originalDbColumnName="\&quot;PimSourceName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_R3qx0EYKEeehpaV-WRrPMw - CountryCodes" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CountryCodes&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from STAGING.\&quot;Country\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CountryCodes" name="tEXAInput_3">
+      <column comment="" key="false" length="0" name="Name" nullable="true" originalDbColumnName="\&quot;Name\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Code" nullable="true" originalDbColumnName="\&quot;2LetterCode\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Kas3cEauEeeyIrOrCAmQGw - ShopUrlMapping" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;PimShopUrlMapping\&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from STAGING.\&quot;PimShopUrlMapping\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PimShopName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Url"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ShopUrlMapping" name="tEXAInput_4">
+      <column comment="" key="false" length="0" name="PimShopName" nullable="true" originalDbColumnName="\&quot;PimShopName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Url" nullable="true" originalDbColumnName="\&quot;Url\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="992" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_5" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_BeLrsEebEeeupvqP_JLieQ - PimShopWarehouseMapping" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;PimShopWarehouseMapping\&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xA;SELECT *&#xA;FROM&#x9;STAGING.\&quot;PimShopWarehouseMapping\&quot;&#xA;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PimShopName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PimWarehouseName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="PimShopWarehouseMapping" name="tEXAInput_5">
+      <column comment="" key="false" length="0" name="PimShopName" nullable="true" originalDbColumnName="\&quot;PimShopName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PimWarehouseName" nullable="true" originalDbColumnName="\&quot;PimWarehouseName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_6" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ToyH0EeDEeeupvqP_JLieQ - PurchasePrices" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;PurchasePrices&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#xA;&#x9;&#x9;pp.\&quot;ItemIdentifier\&quot;&#xA;&#x9;&#x9;, pp.\&quot;Warehouse\&quot;&#xA;&#x9;&#x9;, pp.\&quot;Price\&quot;&#xA;&#x9;&#x9;, pp.\&quot;StartDate\&quot;&#xA;FROM&#x9;STAGING.\&quot;PurchasePrices\&quot; pp&#xA;INNER JOIN (&#xA;&#x9;SELECT STAGING.\&quot;PurchasePrices\&quot;.\&quot;ItemIdentifier\&quot;, STAGING.\&quot;PurchasePrices\&quot;.\&quot;Warehouse\&quot;, MAX(STAGING.\&quot;PurchasePrices\&quot;.\&quot;StartDate\&quot;) AS \&quot;StartDate\&quot;&#xA;&#x9;FROM&#x9;STAGING.\&quot;PurchasePrices\&quot;&#xA;&#x9;GROUP BY  STAGING.\&quot;PurchasePrices\&quot;.\&quot;ItemIdentifier\&quot;, STAGING.\&quot;PurchasePrices\&quot;.\&quot;Warehouse\&quot;&#xA;&#x9;) ppt&#xA;ON pp.\&quot;ItemIdentifier\&quot; = ppt.\&quot;ItemIdentifier\&quot;&#xA;&#x9;AND pp.\&quot;Warehouse\&quot; = ppt.\&quot;Warehouse\&quot;&#xA; &#x9;AND pp.\&quot;StartDate\&quot; = ppt.\&quot;StartDate\&quot;&#xA;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="location"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="price"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Branch"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="PurchasePrices" name="tEXAInput_6">
+      <column comment="" key="true" length="0" name="ean" nullable="true" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="location" nullable="true" originalDbColumnName="\&quot;Warehouse\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="price" nullable="true" originalDbColumnName="\&quot;Price\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="start_date" nullable="true" originalDbColumnName="\&quot;StartDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'000Z'&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="Branch" nullable="true" originalDbColumnName="\&quot;Branch\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CurrencyCode" nullable="true" originalDbColumnName="\&quot;CurrencyCode\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_7" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GmSjIEbZEeeI1cUx5Sgvug - Categories" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Categories&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from STAGING.\&quot;Categories\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Identifier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Shop"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Parent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Categories" name="tEXAInput_7">
+      <column comment="" key="true" length="0" name="Identifier" nullable="false" originalDbColumnName="\&quot;Identifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Shop" nullable="true" originalDbColumnName="\&quot;Shop\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Name" nullable="true" originalDbColumnName="\&quot;Name\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Parent" nullable="true" originalDbColumnName="\&quot;Parent\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_YLqgUEUWEeeyMJL3iKje7Q - SalesItemExasol" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="true"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemIdentifier"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopIdentifier"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ManagementSystem"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ean"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReportingName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsService"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsBOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopMainCategory"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopMainCategoryName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopCategoryPath"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HarmonizedCategory"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brand"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Season"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Colour"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ContentRating"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Material"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryOfOrigin"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GoogleNoIndex"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesDispositionClass"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApproximatePurchasePrice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OversoldLimit"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OversoldType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CanonicalURL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemExasol" name="tLogRow_2">
+      <column comment="" key="true" length="0" name="ItemIdentifier" nullable="false" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="ShopIdentifier" nullable="false" originalDbColumnName="\&quot;ShopIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ManagementSystem" nullable="false" originalDbColumnName="\&quot;ManagementSystem\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Type" nullable="true" originalDbColumnName="\&quot;Type\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ean" nullable="true" originalDbColumnName="\&quot;EAN\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReportingName" nullable="true" originalDbColumnName="\&quot;ReportingName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Description" nullable="true" originalDbColumnName="\&quot;Description\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsService" nullable="true" originalDbColumnName="\&quot;IsService\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsBOM" nullable="true" originalDbColumnName="\&quot;IsBOM\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopStatus" nullable="true" originalDbColumnName="\&quot;ShopStatus\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategory" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategoryName" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopCategoryPath" nullable="true" originalDbColumnName="\&quot;ShopCategoryPath\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="HarmonizedCategory" nullable="true" originalDbColumnName="\&quot;HarmonizedCategory\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brand" nullable="true" originalDbColumnName="\&quot;Brand\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Season" nullable="true" originalDbColumnName="\&quot;Season\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Colour" nullable="true" originalDbColumnName="\&quot;Colour\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContentRating" nullable="true" originalDbColumnName="\&quot;ContentRating\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductType" nullable="true" originalDbColumnName="\&quot;ProductType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Material" nullable="true" originalDbColumnName="\&quot;Material\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Size" nullable="true" originalDbColumnName="\&quot;Size\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CountryOfOrigin" nullable="true" originalDbColumnName="\&quot;CountryOfOrigin\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GoogleNoIndex" nullable="true" originalDbColumnName="\&quot;GoogleNoIndex\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SalesDispositionClass" nullable="true" originalDbColumnName="\&quot;SalesDispositionClass\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ApproximatePurchasePrice" nullable="true" originalDbColumnName="\&quot;ApproximatePurchasePrice\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OversoldLimit" nullable="true" originalDbColumnName="\&quot;OversoldLimit\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OversoldType" nullable="true" originalDbColumnName="\&quot;OversoldType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CanonicalURL" nullable="true" originalDbColumnName="\&quot;CanonicalURL\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAOutput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;SalesItem\&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="CHECK" name="USE_COMMIT_CONTROL" value="true"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemIdentifier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopIdentifier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ManagementSystem"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ean"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReportingName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsService"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsBOM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopStatus"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopMainCategory"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopMainCategoryName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShopCategoryPath"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HarmonizedCategory"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brand"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Season"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Colour"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ContentRating"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductType"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Material"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryOfOrigin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GoogleNoIndex"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesDispositionClass"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApproximatePurchasePrice"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OversoldLimit"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OversoldType"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CanonicalURL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SalesItemExasol" name="tEXAOutput_1">
+      <column comment="" key="true" length="0" name="ItemIdentifier" nullable="false" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="ShopIdentifier" nullable="false" originalDbColumnName="\&quot;ShopIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ManagementSystem" nullable="false" originalDbColumnName="\&quot;ManagementSystem\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Type" nullable="true" originalDbColumnName="\&quot;Type\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ean" nullable="true" originalDbColumnName="\&quot;EAN\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReportingName" nullable="true" originalDbColumnName="\&quot;ReportingName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Description" nullable="true" originalDbColumnName="\&quot;Description\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsService" nullable="true" originalDbColumnName="\&quot;IsService\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsBOM" nullable="true" originalDbColumnName="\&quot;IsBOM\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopStatus" nullable="true" originalDbColumnName="\&quot;ShopStatus\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategory" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategoryName" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopCategoryPath" nullable="true" originalDbColumnName="\&quot;ShopCategoryPath\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="HarmonizedCategory" nullable="true" originalDbColumnName="\&quot;HarmonizedCategory\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brand" nullable="true" originalDbColumnName="\&quot;Brand\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Season" nullable="true" originalDbColumnName="\&quot;Season\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Colour" nullable="true" originalDbColumnName="\&quot;Colour\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContentRating" nullable="true" originalDbColumnName="\&quot;ContentRating\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductType" nullable="true" originalDbColumnName="\&quot;ProductType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Material" nullable="true" originalDbColumnName="\&quot;Material\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Size" nullable="true" originalDbColumnName="\&quot;Size\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CountryOfOrigin" nullable="true" originalDbColumnName="\&quot;CountryOfOrigin\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GoogleNoIndex" nullable="true" originalDbColumnName="\&quot;GoogleNoIndex\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SalesDispositionClass" nullable="true" originalDbColumnName="\&quot;SalesDispositionClass\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ApproximatePurchasePrice" nullable="true" originalDbColumnName="\&quot;ApproximatePurchasePrice\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OversoldLimit" nullable="true" originalDbColumnName="\&quot;OversoldLimit\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OversoldType" nullable="true" originalDbColumnName="\&quot;OversoldType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CanonicalURL" nullable="true" originalDbColumnName="\&quot;CanonicalURL\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="SalesItemExasol" name="REJECT">
+      <column comment="" key="true" length="0" name="ItemIdentifier" nullable="false" originalDbColumnName="\&quot;ItemIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="ShopIdentifier" nullable="false" originalDbColumnName="\&quot;ShopIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ManagementSystem" nullable="false" originalDbColumnName="\&quot;ManagementSystem\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Type" nullable="true" originalDbColumnName="\&quot;Type\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Ean" nullable="true" originalDbColumnName="\&quot;EAN\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ReportingName" nullable="true" originalDbColumnName="\&quot;ReportingName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Description" nullable="true" originalDbColumnName="\&quot;Description\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsService" nullable="true" originalDbColumnName="\&quot;IsService\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IsBOM" nullable="true" originalDbColumnName="\&quot;IsBOM\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopStatus" nullable="true" originalDbColumnName="\&quot;ShopStatus\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategory" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryIdentifier\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopMainCategoryName" nullable="true" originalDbColumnName="\&quot;ShopMainCategoryName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ShopCategoryPath" nullable="true" originalDbColumnName="\&quot;ShopCategoryPath\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="HarmonizedCategory" nullable="true" originalDbColumnName="\&quot;HarmonizedCategory\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Brand" nullable="true" originalDbColumnName="\&quot;Brand\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Season" nullable="true" originalDbColumnName="\&quot;Season\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Colour" nullable="true" originalDbColumnName="\&quot;Colour\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContentRating" nullable="true" originalDbColumnName="\&quot;ContentRating\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ProductType" nullable="true" originalDbColumnName="\&quot;ProductType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Material" nullable="true" originalDbColumnName="\&quot;Material\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Size" nullable="true" originalDbColumnName="\&quot;Size\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CountryOfOrigin" nullable="true" originalDbColumnName="\&quot;CountryOfOrigin\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GoogleNoIndex" nullable="true" originalDbColumnName="\&quot;GoogleNoIndex\&quot;" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SalesDispositionClass" nullable="true" originalDbColumnName="\&quot;SalesDispositionClass\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ApproximatePurchasePrice" nullable="true" originalDbColumnName="\&quot;ApproximatePurchasePrice\&quot;" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OversoldLimit" nullable="true" originalDbColumnName="\&quot;OversoldLimit\&quot;" pattern="" precision="0" sourceType="DECIMAL" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="OversoldType" nullable="true" originalDbColumnName="\&quot;OversoldType\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CanonicalURL" nullable="true" originalDbColumnName="\&quot;CanonicalURL\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAInput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_8" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;LastLoadedTimestamps\&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from STAGING.\&quot;LastLoadedTimestamps\&quot; WHERE \&quot;Processname\&quot; = '&quot; + context.ProcessName + &quot;';&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tEXAInput_8">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tLogRow_3">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;if (input_row.LastLoadedDate != null) {&#xA;&#x9;context.StartDate = input_row.LastLoadedDate;&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tJavaRow_1">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1" show="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getFirstName()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="ARRAY" value="TalendDate.getCurrentDate()"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tRowGenerator_1">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;output_row.ProcessName = context.ProcessName;&#xA;&#xA;if (context.LastModified.after(context.StartDate)) {&#xA;&#x9;output_row.LastLoadedDate = context.LastModified;&#xA;} else {&#xA;&#x9;output_row.LastLoadedDate = context.StartDate;&#xA;}&#x9;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tJavaRow_2">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tLogRow_4">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;ProcessName\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXAOutput" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k02rYFTuEeePgaM3cxrg8w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;\&quot;LastLoadedTimestamps\&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_eYXAAExREeeUNedlm5ZuKg - LastLoadedTimestamps" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="Exasol_id" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="CHECK" name="USE_COMMIT_CONTROL" value="true"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LastLoadedTimestamps" name="tEXAOutput_2">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="LastLoadedTimestamps" name="REJECT">
+      <column comment="" key="true" length="0" name="ProcessName" nullable="true" originalDbColumnName="\&quot;Processname\&quot;" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastLoadedDate" nullable="true" originalDbColumnName="\&quot;LastLoadedDate\&quot;" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tEXARow" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXARow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_9gy3oExREeeUNedlm5ZuKg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;88.198.136.209&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;8563&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: You can configure a server or cluster as ip-address range or comma separated host/ip-address list. &#xA;        Examples: &quot;172.16.173.128&quot; or &quot;172.16.173.128..130&quot; or &quot;server1,server2&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;UNIFIEDDWH&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="M+IpPZqiJJRknifm428Fygz1lUfAk14Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;MERGE INTO UNIFIEDDWH.\&quot;D_SalesItem\&quot; dwh&#xA;USING ( SELECT * FROM STAGING.\&quot;SalesItem\&quot; WHERE \&quot;ShopIdentifier\&quot; IS NOT NULL ) sta&#xA;ON (&#xA;    dwh.\&quot;ItemIdentifier\&quot; = sta.\&quot;ItemIdentifier\&quot;&#xA;    AND dwh.\&quot;ShopIdentifier\&quot; = sta.\&quot;ShopIdentifier\&quot;&#xA;)&#xA;WHEN MATCHED THEN UPDATE SET&#xA;    \&quot;ManagementSystem\&quot; = sta.\&quot;ManagementSystem\&quot;&#xA;    ,\&quot;Type\&quot; = sta.\&quot;Type\&quot;&#xA;    ,\&quot;EAN\&quot; = sta.\&quot;EAN\&quot;&#xA;    ,\&quot;ReportingName\&quot; = sta.\&quot;ReportingName\&quot;&#xA;    ,\&quot;Description\&quot; = sta.\&quot;Description\&quot;&#xA;    ,\&quot;IsService\&quot; = sta.\&quot;IsService\&quot;&#xA;    ,\&quot;IsBOM\&quot; = sta.\&quot;IsBOM\&quot;&#xA;    ,\&quot;ShopStatus\&quot; = sta.\&quot;ShopStatus\&quot;&#xA;    ,\&quot;ShopMainCategoryIdentifier\&quot; = sta.\&quot;ShopMainCategoryIdentifier\&quot;&#xA;    ,\&quot;ShopMainCategoryName\&quot; = sta.\&quot;ShopMainCategoryName\&quot;&#xA;    ,\&quot;ShopCategoryPath\&quot; = sta.\&quot;ShopCategoryPath\&quot;&#xA;    ,\&quot;HarmonizedCategory\&quot; = sta.\&quot;HarmonizedCategory\&quot;&#xA;    ,\&quot;Brand\&quot; = sta.\&quot;Brand\&quot;&#xA;    ,\&quot;Season\&quot; = sta.\&quot;Season\&quot;&#xA;    ,\&quot;Colour\&quot; = sta.\&quot;Colour\&quot;&#xA;    ,\&quot;ContentRating\&quot; = sta.\&quot;ContentRating\&quot;&#xA;    ,\&quot;ProductType\&quot; = sta.\&quot;ProductType\&quot;&#xA;    ,\&quot;Material\&quot; = sta.\&quot;Material\&quot;&#xA;    ,\&quot;Size\&quot; = sta.\&quot;Size\&quot;&#xA;    ,\&quot;CountryOfOrigin\&quot; = sta.\&quot;CountryOfOrigin\&quot;&#xA;    ,\&quot;GoogleNoIndex\&quot; = sta.\&quot;GoogleNoIndex\&quot;&#xA;    ,\&quot;SalesDispositionClass\&quot; = sta.\&quot;SalesDispositionClass\&quot;&#xA;    ,\&quot;ApproximatePurchasePrice\&quot; = sta.\&quot;ApproximatePurchasePrice\&quot;&#xA;    ,\&quot;OversoldLimit\&quot; = sta.\&quot;OversoldLimit\&quot;&#xA;    ,\&quot;OversoldType\&quot; = sta.\&quot;OversoldType\&quot;&#xA;    ,\&quot;CanonicalURL\&quot; = sta.\&quot;CanonicalURL\&quot;&#xA;&#xA;WHEN NOT MATCHED THEN INSERT (&#xA;    \&quot;ItemIdentifier\&quot;&#xA;    ,\&quot;ShopIdentifier\&quot;&#xA;    ,\&quot;ManagementSystem\&quot;&#xA;    ,\&quot;Type\&quot;&#xA;    ,\&quot;EAN\&quot;&#xA;    ,\&quot;ReportingName\&quot;&#xA;    ,\&quot;Description\&quot;&#xA;    ,\&quot;IsService\&quot;&#xA;    ,\&quot;IsBOM\&quot;&#xA;    ,\&quot;ShopStatus\&quot;&#xA;    ,\&quot;ShopMainCategoryIdentifier\&quot;&#xA;    ,\&quot;ShopMainCategoryName\&quot;&#xA;    ,\&quot;ShopCategoryPath\&quot;&#xA;    ,\&quot;HarmonizedCategory\&quot;&#xA;    ,\&quot;Brand\&quot;&#xA;    ,\&quot;Season\&quot;&#xA;    ,\&quot;Colour\&quot;&#xA;    ,\&quot;ContentRating\&quot;&#xA;    ,\&quot;ProductType\&quot;&#xA;    ,\&quot;Material\&quot;&#xA;    ,\&quot;Size\&quot;&#xA;    ,\&quot;CountryOfOrigin\&quot;&#xA;    ,\&quot;GoogleNoIndex\&quot;&#xA;    ,\&quot;SalesDispositionClass\&quot;&#xA;    ,\&quot;ApproximatePurchasePrice\&quot;&#xA;    ,\&quot;OversoldLimit\&quot;&#xA;    ,\&quot;OversoldType\&quot;&#xA;    ,\&quot;CanonicalURL\&quot;&#xA;) VALUES (&#xA;    sta.\&quot;ItemIdentifier\&quot;&#xA;    , sta.\&quot;ShopIdentifier\&quot;&#xA;    , sta.\&quot;ManagementSystem\&quot;&#xA;    , sta.\&quot;Type\&quot;&#xA;    , sta.\&quot;EAN\&quot;&#xA;    , sta.\&quot;ReportingName\&quot;&#xA;    , sta.\&quot;Description\&quot;&#xA;    , sta.\&quot;IsService\&quot;&#xA;    , sta.\&quot;IsBOM\&quot;&#xA;    , sta.\&quot;ShopStatus\&quot;&#xA;    , sta.\&quot;ShopMainCategoryIdentifier\&quot;&#xA;    , sta.\&quot;ShopMainCategoryName\&quot;&#xA;    , sta.\&quot;ShopCategoryPath\&quot;&#xA;    , sta.\&quot;HarmonizedCategory\&quot;&#xA;    , sta.\&quot;Brand\&quot;&#xA;    , sta.\&quot;Season\&quot;&#xA;    , sta.\&quot;Colour\&quot;&#xA;    , sta.\&quot;ContentRating\&quot;&#xA;    , sta.\&quot;ProductType\&quot;&#xA;    , sta.\&quot;Material\&quot;&#xA;    , sta.\&quot;Size\&quot;&#xA;    , sta.\&quot;CountryOfOrigin\&quot;&#xA;    , sta.\&quot;GoogleNoIndex\&quot;&#xA;    , sta.\&quot;SalesDispositionClass\&quot;&#xA;    , sta.\&quot;ApproximatePurchasePrice\&quot;&#xA;    , sta.\&quot;OversoldLimit\&quot;&#xA;    , sta.\&quot;OversoldType\&quot;&#xA;    , sta.\&quot;CanonicalURL\&quot;&#xA;);&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Exasol" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encryption=0&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1;parameterName2=value2;&quot;"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tEXARow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tMongoDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_1" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="10" mergeOrder="2" metaname="tMongoDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_2" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row13" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="dwhrow" lineStyle="0" metaname="dwhrow" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dwhrow" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tEXAInput_1" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tEXAInput_2" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tEXAInput_3" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tEXAInput_4" offsetLabelX="-1" offsetLabelY="-50" source="tEXAInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tEXAInput_5" offsetLabelX="2" offsetLabelY="0" source="tEXAInput_5" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tEXAInput_6" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_6" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tEXAInput_7" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_7" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tEXAOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tEXAOutput_1" offsetLabelX="0" offsetLabelY="0" source="tEXAOutput_1" target="tEXARow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tEXAInput_8" offsetLabelX="0" offsetLabelY="0" source="tEXAInput_8" target="tLogRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LastLoaded"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMongoDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row19" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tLogRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ProcessName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastLoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="tEXAOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tEXARow_1" offsetLabelX="0" offsetLabelY="0" source="tEXARow_1" target="tRowGenerator_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <note opaque="true" posX="288" posY="416" sizeHeight="64" sizeWidth="225" text="Get the Documents from MongoDB"/>
+  <note opaque="true" posX="1056" posY="416" sizeHeight="64" sizeWidth="160" text="Store it into the 'sol"/>
+  <note opaque="true" posX="736" posY="224" sizeHeight="64" sizeWidth="96" text="Mappings"/>
+  <note opaque="true" posX="384" posY="224" sizeHeight="33" sizeWidth="96" text="ShopNames"/>
+  <note opaque="true" posX="448" posY="128" sizeHeight="33" sizeWidth="96" text="OversoldType"/>
+  <note opaque="true" posX="544" posY="32" sizeHeight="33" sizeWidth="96" text="Country"/>
+  <note opaque="true" posX="736" posY="32" sizeHeight="33" sizeWidth="96" text="ShopUrls"/>
+  <note opaque="true" posX="960" posY="32" sizeHeight="33" sizeWidth="96" text="Warehouses"/>
+  <note opaque="true" posX="1088" posY="128" sizeHeight="33" sizeWidth="96" text="PurchasePrices"/>
+  <note opaque="true" posX="1216" posY="224" sizeHeight="33" sizeWidth="96" text="Categories"/>
+  <note opaque="true" posX="1536" posY="64" sizeHeight="353" sizeWidth="257" text="Known Issues in the working Version:&#xA;&#xA;- purchase Prices don't match to default &#xA;  Warehouse&#xA;&#xA;&#xA;Missing Destination Fields:&#xA;&#xA;- SalesDispositionClass: Missing &#xA;   Documentation&#xA;&#xA;- ContentRating: Missing Documentation&#xA;&#xA;- HarmonizedCategory: Missing &#xA;   Documentation">
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+  </note>
+  <note opaque="true" posX="32" posY="544" sizeHeight="64" sizeWidth="96" text="Get last loaded &#xA;date"/>
+  <note opaque="true" posX="1536" posY="480" sizeHeight="64" sizeWidth="161" text="Store the Last Loaded Date"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXAInput_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEXARow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
