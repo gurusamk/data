@@ -116,13 +116,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_2_X"/>
-    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
-    <elementParameter field="TABLE" name="REPLICA_SET" show="false">
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
+    <elementParameter field="TABLE" name="REPLICA_SET">
       <elementValue elementRef="REPLICA_HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
       <elementValue elementRef="REPLICA_PORT" value="27017"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;pim&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
@@ -254,13 +254,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_2_X"/>
-    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
-    <elementParameter field="TABLE" name="REPLICA_SET" show="false">
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
+    <elementParameter field="TABLE" name="REPLICA_SET">
       <elementValue elementRef="REPLICA_HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
       <elementValue elementRef="REPLICA_PORT" value="27017"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;mongo02.prod.bi.windeln-it.de&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;pim&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
