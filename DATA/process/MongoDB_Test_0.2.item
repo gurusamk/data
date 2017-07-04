@@ -319,16 +319,16 @@
     <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
-    <elementParameter field="CHECK" name="EXECUTE_COMMAND" value="true"/>
-    <elementParameter field="CHECK" name="EXECUTE_KEYVALUECOMMAND" value="false"/>
-    <elementParameter field="CHECK" name="EXECUTE_JSONCOMMAND" value="false"/>
-    <elementParameter field="TEXT" name="COMMAND" value="&quot;db.getMongo().setSlaveOk()&quot;"/>
+    <elementParameter field="CHECK" name="EXECUTE_COMMAND" value="false"/>
+    <elementParameter field="CHECK" name="EXECUTE_KEYVALUECOMMAND" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXECUTE_JSONCOMMAND" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COMMAND" value="&quot;db.getMongo().setSlaveOk()&quot;" show="false"/>
     <elementParameter field="TABLE" name="COMMAND_KEYVALUES" show="false"/>
     <elementParameter field="LABEL" name="JSON_COMMAND_NOTE" value="Note : Surround String values with single quotes or escaped double quotes" show="false"/>
     <elementParameter field="MEMO" name="JSON_COMMAND" value="&quot;{createIndexes: 'restaurants', indexes : [{key : {restaurant_id: 1}, name: 'id_index_2', unique: true}]}&quot;" show="false"/>
-    <elementParameter field="MEMO" name="FUNCTION" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TABLE" name="FUNCTION_PARAMETERS" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MEMO" name="FUNCTION" value="&quot;db.getMongo().setSlaveOk()&quot;"/>
+    <elementParameter field="TABLE" name="FUNCTION_PARAMETERS"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMongoDBRow_1"/>
   </node>
