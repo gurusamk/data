@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendNoSQLMetadata:NoSQLConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmi:id="_GF97oGC0EeeGy_Vivii16Q" name="PimMongoDB" label="PimMongoDB" dbType="MONGODB">
+  <attributes xmi:id="_GF97oWC0EeeGy_Vivii16Q" key="DB_VERSION" value="MONGODB_3_2_X"/>
+  <attributes xmi:id="_GF97omC0EeeGy_Vivii16Q" key="HOST" value="localhost"/>
+  <attributes xmi:id="_GF97o2C0EeeGy_Vivii16Q" key="PORT" value="27017"/>
+  <attributes xmi:id="_GF97pGC0EeeGy_Vivii16Q" key="DATABASE" value="pim"/>
+  <attributes xmi:id="_GF97pWC0EeeGy_Vivii16Q" key="REQUIRED_AUTHENTICATION" value="true"/>
+  <attributes xmi:id="_GF97pmC0EeeGy_Vivii16Q" key="USERNAME" value="usr_bi_read"/>
+  <attributes xmi:id="_GF97p2C0EeeGy_Vivii16Q" key="PASSWORD" value="r6NNzfcawssCRMAPN5AGv2vbo5T3ogNT"/>
+  <attributes xmi:id="_GF97qGC0EeeGy_Vivii16Q" key="USE_REPLICA_SET" value="true"/>
+  <attributes xmi:id="_GF97qWC0EeeGy_Vivii16Q" key="REPLICA_SET" value="[{&quot;REPLICA_HOST&quot;:&quot;mongo02.prod.bi.windeln-it.de&quot;,&quot;REPLICA_PORT&quot;:&quot;27017&quot;}]"/>
+</TalendNoSQLMetadata:NoSQLConnection>
