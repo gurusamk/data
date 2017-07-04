@@ -140,6 +140,7 @@
     <elementParameter field="TABLE" name="AGGREGATION_STAGES">
       <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {current: 1, branch: 'public', shop: {$exists: true}, unit_of_measure: {$exists: true} } }&quot;"/>
       <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $limit: 10}&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $unwind: '$shop'}&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
