@@ -138,9 +138,8 @@
     <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
     <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;" show="false"/>
     <elementParameter field="TABLE" name="AGGREGATION_STAGES">
-      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {modifiedAt: { $gt: '&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;, context.StartDate) + &quot;'} } }&quot;"/>
       <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $match: {current: 1, branch: 'public', shop: {$exists: true}, unit_of_measure: {$exists: true} } }&quot;"/>
-      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $unwind: '$shop' }&quot;"/>
+      <elementValue elementRef="AGGREGATION_STAGE" value="&quot;{ $limit: 10}&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="ean"/>
