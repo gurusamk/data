@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TalendNoSQLMetadata:NoSQLConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmi:id="_GF97oGC0EeeGy_Vivii16Q" name="PimMongoDB" label="PimMongoDB" dbType="MONGODB">
-  <attributes xmi:id="_gdCR0GC7EeeGy_Vivii16Q" key="DB_VERSION" value="MONGODB_3_2_X"/>
-  <attributes xmi:id="_gdCR0WC7EeeGy_Vivii16Q" key="HOST" value="mongo02.prod.bi.windeln-it.de"/>
-  <attributes xmi:id="_gdCR0mC7EeeGy_Vivii16Q" key="PORT" value="27017"/>
-  <attributes xmi:id="_gdCR02C7EeeGy_Vivii16Q" key="DATABASE" value="pim"/>
-  <attributes xmi:id="_gdCR1GC7EeeGy_Vivii16Q" key="REQUIRED_AUTHENTICATION" value="true"/>
-  <attributes xmi:id="_gdCR1WC7EeeGy_Vivii16Q" key="USERNAME" value="usr_bi_read"/>
-  <attributes xmi:id="_gdCR1mC7EeeGy_Vivii16Q" key="PASSWORD" value="r6NNzfcawssCRMAPN5AGv2vbo5T3ogNT"/>
-  <attributes xmi:id="_gdCR12C7EeeGy_Vivii16Q" key="USE_REPLICA_SET" value="false"/>
-  <attributes xmi:id="_gdCR2GC7EeeGy_Vivii16Q" key="REPLICA_SET" value="[{&quot;REPLICA_HOST&quot;:&quot;mongo02.prod.bi.windeln-it.de&quot;,&quot;REPLICA_PORT&quot;:&quot;27017&quot;}]"/>
+  <attributes xmi:id="_mpP8cGC7EeeGy_Vivii16Q" key="DB_VERSION" value="MONGODB_3_2_X"/>
+  <attributes xmi:id="_mpP8cWC7EeeGy_Vivii16Q" key="HOST" value="mongo02.prod.bi.windeln-it.de"/>
+  <attributes xmi:id="_mpP8cmC7EeeGy_Vivii16Q" key="PORT" value="27017"/>
+  <attributes xmi:id="_mpP8c2C7EeeGy_Vivii16Q" key="DATABASE" value="pim"/>
+  <attributes xmi:id="_mpP8dGC7EeeGy_Vivii16Q" key="REQUIRED_AUTHENTICATION" value="true"/>
+  <attributes xmi:id="_mpP8dWC7EeeGy_Vivii16Q" key="USERNAME" value="usr_bi_read"/>
+  <attributes xmi:id="_mpP8dmC7EeeGy_Vivii16Q" key="PASSWORD" value="r6NNzfcawssCRMAPN5AGv2vbo5T3ogNT"/>
+  <attributes xmi:id="_mpP8d2C7EeeGy_Vivii16Q" key="USE_REPLICA_SET" value="false"/>
+  <attributes xmi:id="_mpP8eGC7EeeGy_Vivii16Q" key="REPLICA_SET" value="[{&quot;REPLICA_HOST&quot;:&quot;mongo02.prod.bi.windeln-it.de&quot;,&quot;REPLICA_PORT&quot;:&quot;27017&quot;}]"/>
 </TalendNoSQLMetadata:NoSQLConnection>
